@@ -1,115 +1,107 @@
-.landing {
-  background-image: url('/assets/images/bkg.png');
-  background-size: cover;
-  background-position: center;
+.hero {
+  background: url('/assets/images/bkg.png') center/cover no-repeat;
   height: 100vh;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
   position: relative;
-  color: white;
-  padding: 2rem;
-}
-
-.landing::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.4);
-  z-index: 1;
-}
-
-.landing-content {
-  position: relative;
-  z-index: 2;
-  max-width: 800px;
-}
-
-.landing-content h1 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-  font-weight: bold;
-}
-
-.landing-content p {
-  font-size: 1.4rem;
-  margin-bottom: 2rem;
-}
-
-.app-icons {
   display: flex;
-  gap: 2rem;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-bottom: 2rem;
-}
-
-.app-icon:hover {
-  transform: scale(1.05);
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-  transition: 0.2s ease;
-}
-
-
-.icon-block {
-  display: flex;
-  flex-direction: column;
   align-items: center;
-  gap: 0.5rem;
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 1rem;
-  padding: 1rem;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-  transition: transform 0.3s;
-}
-
-.icon-block:hover {
-  transform: scale(1.05);
-}
-
-.icon-block img {
-  width: 72px;
-  height: 72px;
-  object-fit: contain;
-}
-
-.icon-block span {
-  font-size: 1rem;
-  font-weight: 500;
-  color: #fff;
-}
-
-.store-links {
-  margin-top: 2rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.store-links p {
-  font-size: 1rem;
-  margin-bottom: 1rem;
-}
-
-.stores {
-  display: flex;
   justify-content: center;
-  gap: 1rem;
-  flex-wrap: wrap;
+
+  .hero-overlay {
+    background: rgba(0, 0, 0, 0.4); // pour contraster
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero-content {
+    text-align: center;
+    color: white;
+    max-width: 900px;
+    padding: 1rem;
+
+    .hero-title {
+      font-size: 3rem;
+      font-weight: bold;
+      text-shadow: 0 2px 4px rgba(0,0,0,0.7);
+    }
+
+    .hero-subtitle {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+      text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+    }
+
+    .apps {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+      margin-bottom: 2rem;
+
+      .app-icon {
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 12px;
+        padding: 1rem;
+        text-align: center;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+        img {
+          width: 60px;
+          height: 60px;
+          margin-bottom: 0.5rem;
+        }
+
+        p {
+          font-size: 0.9rem;
+          color: #fff;
+        }
+
+        &:hover {
+          transform: scale(1.05);
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+        }
+      }
+    }
+
+    .coming-soon {
+      margin-bottom: 1rem;
+      font-size: 1rem;
+      font-weight: 300;
+      color: #eee;
+    }
+
+    .store-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+
+      img {
+        height: 45px;
+        transition: transform 0.2s ease;
+        &:hover {
+          transform: scale(1.05);
+        }
+      }
+    }
+  }
 }
 
-.stores img {
-  height: 50px;
-  object-fit: contain;
-  transition: transform 0.3s ease;
-}
+// Responsive
+@media (max-width: 768px) {
+  .hero-content {
+    .hero-title {
+      font-size: 2.2rem;
+    }
 
-.stores img:hover {
-  transform: scale(1.05);
-}
+    .apps {
+      flex-direction: column;
+    }
 
-h1, p {
-  text-shadow: 0 2px 4px rgba(0,0,0,0.6);
+    .store-buttons {
+      flex-direction: column;
+    }
+  }
 }
