@@ -1,0 +1,17 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background: #f6f6f6; // optionnel, pour éviter le noir si global background noir
+}
+
+app-footer {
+  background-color: #111; // ton footer noir
+  color: #fff;
+}

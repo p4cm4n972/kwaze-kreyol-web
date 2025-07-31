@@ -1,0 +1,57 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.4); /* transparence */
+  z-index: 10;
+  color: white;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  box-sizing: border-box;
+}
+
+.navbar .links {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap;
+}
+
+.navbar .links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: color 0.3s;
+  white-space: nowrap;
+}
+
+.navbar .links li a:hover {
+  color: #ffcc00;
+}
+
+.navbar .burger {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar .links {
+    display: none;
+  }
+  .navbar .burger {
+    display: block;
+    color: white;
+  }
+}
+
+.brand img.logo {
+  height: 50px;
+}

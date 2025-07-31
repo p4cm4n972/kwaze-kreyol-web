@@ -1,0 +1,76 @@
+.about-wrapper {
+  background-image: url('/assets/images/cadre.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-section {
+  border-radius: 1rem;
+  width: 100%;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  margin-top: 80px; /* adapte selon la hauteur réelle de ta navbar */
+  padding: 2rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.about-container {
+  max-width: 800px;
+  width: 100%;
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.15);
+  font-size: 1.1rem;
+  line-height: 1.75;
+  color: #222;
+}
+
+.about-title {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+  font-weight: bold;
+}
+
+.about-container p {
+  margin-bottom: 1.5rem;
+}
+
+.itmade-link {
+  color: #007bff;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.itmade-link:hover {
+  text-decoration: underline;
+}
+
+.email-link {
+  font-weight: 500;
+  text-decoration: none;
+  color: #0056b3;
+}
+
+.email-link:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .about-wrapper {
+    padding: 1rem;
+    background-size: cover;
+  }
+
+  .about-section {
+    padding: 1rem;
+  }
+}
