@@ -1,8 +1,11 @@
-<app-navbar></app-navbar>
-<app-sidenav></app-sidenav>
+<mat-sidenav-container class="main-container">
+  <mat-sidenav #drawer mode="over" position="start">
+    <app-sidenav [drawer]="drawer"></app-sidenav>
+  </mat-sidenav>
 
-<main class="main-content">
-  <router-outlet></router-outlet>
-</main>
-
-<app-footer></app-footer>
+  <mat-sidenav-content>
+    <app-navbar [drawer]="drawer"></app-navbar>
+    <router-outlet></router-outlet>
+    <app-footer></app-footer>
+  </mat-sidenav-content>
+</mat-sidenav-container>

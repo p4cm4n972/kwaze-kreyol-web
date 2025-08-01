@@ -1,7 +1,17 @@
-<mat-sidenav-container class="sidenav-container">
-  <mat-sidenav #drawer mode="over" class="mobile-menu">
-    <a routerLink="/">Accueil</a>
-    <a routerLink="/about">À propos</a>
-    <a routerLink="/support">Support</a>
-  </mat-sidenav>
-</mat-sidenav-container>
+<nav class="sidenav-container">
+  <div class="sidenav-header">
+    <img src="/assets/images/logo-kk.webp" alt="Kwazé Kréyol Logo" class="sidenav-logo" />
+    <p class="slogan">Tradui, jwé, viv kréyol la !</p>
+  </div>
+
+  <ul class="sidenav-links">
+    <li><a routerLink="/" routerLinkActive="active" (click)="drawer.close()">🏠 Accueil</a></li>
+    <li><a routerLink="/about" routerLinkActive="active" (click)="drawer.close()">ℹ️ À propos</a></li>
+    <li><a routerLink="/support" routerLinkActive="active" (click)="drawer.close()">📬 Support</a></li>
+  </ul>
+
+  <div class="sidenav-footer">
+    <p class="footer-note">Une création ITMADE</p>
+    <a href="https://itmade.fr" target="_blank" rel="noopener">🌐 itmade.fr</a>
+  </div>
+</nav>

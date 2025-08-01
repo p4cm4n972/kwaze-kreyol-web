@@ -1,21 +1,70 @@
 .sidenav-container {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  z-index: 3;
-}
-
-.mobile-menu {
-  background-color: #1a1a1a;
-  color: white;
-  padding: 2rem;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  justify-content: space-between;
+  height: 100%;
+  padding: 2rem 1rem;
+  background-color: #fff;
+  color: #222;
+  font-family: 'Segoe UI', sans-serif;
 }
 
-.mobile-menu a {
-  text-decoration: none;
-  color: white;
-  font-size: 1.2rem;
+.sidenav-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.sidenav-logo {
+  width: 72px;
+  height: auto;
+  margin-bottom: 0.5rem;
+}
+
+.slogan {
+  font-size: 0.95rem;
+  color: #666;
+}
+
+.sidenav-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex-grow: 1;
+
+  li {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+
+    a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+
+      &:hover {
+        color: #007bff;
+      }
+
+      &.active {
+        color: #007bff;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+.sidenav-footer {
+  text-align: center;
+  font-size: 0.85rem;
+  border-top: 1px solid #eee;
+  padding-top: 1rem;
+  color: #888;
+
+  a {
+    color: #007bff;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }

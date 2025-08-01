@@ -1,7 +1,8 @@
-import { Component, ViewChild } from '@angular/core';
+import { Component, EventEmitter, Input, Output, ViewChild } from '@angular/core';
 import {MatIconModule} from '@angular/material/icon';
-import { MatSidenav } from '@angular/material/sidenav';
+import { MatSidenav, MatSidenavContainer } from '@angular/material/sidenav';
 import { RouterModule } from '@angular/router';
+import { Sidenav } from "../sidenav/sidenav";
 
 @Component({
   selector: 'app-navbar',
@@ -10,7 +11,7 @@ import { RouterModule } from '@angular/router';
   styleUrl: './navbar.scss'
 })
 export class Navbar {
-  @ViewChild('drawer') drawer!: MatSidenav;
+  @Input() drawer!: MatSidenav;
 
   toggle() {
     this.drawer.toggle();
