@@ -1,5 +1,5 @@
 .hero {
-  background: url('/assets/images/bkg.png') center/cover no-repeat;
+  background: url('/assets/images/bkg.webp') center/cover no-repeat;
   height: 100vh;
   position: relative;
   display: flex;
@@ -104,4 +104,19 @@
       flex-direction: column;
     }
   }
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+    animation-timing-function: ease-in-out;
+  }
+  50% {
+    transform: translateY(-10px);
+    animation-timing-function: ease-in-out;
+  }
+}
+
+.bounce-on-hover:hover {
+  animation: bounce 0.5s;
 }

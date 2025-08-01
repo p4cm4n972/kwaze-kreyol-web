@@ -1,0 +1,40 @@
+.faq-page {
+  padding: 6rem 2rem 3rem; // ← augmente le padding-top à 6rem
+  max-width: 800px;
+  margin: auto;
+
+  .faq-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .faq-intro {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    color: #666;
+  }
+
+  mat-expansion-panel {
+    margin-bottom: 1rem;
+    background-color: #fdfdfd;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+
+  .faq-footer {
+    margin-top: 2rem;
+    text-align: center;
+
+    a {
+      font-weight: bold;
+      color: #00796b;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

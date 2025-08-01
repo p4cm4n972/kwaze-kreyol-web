@@ -1,29 +1,33 @@
-<section class="hero">
-  <div class="hero-overlay">
-    <div class="hero-content">
-      <h1 class="hero-title">Kwazé Kréyol</h1>
-      <p class="hero-subtitle">Tradui, jwé, viv kréyol la !</p>
+<section class="hero" aria-labelledby="hero-title">
+    <div class="hero-overlay">
+        <div class="hero-content">
+            <h1 id="hero-title" class="hero-title">Kwazé Kréyol</h1>
+            <p class="hero-subtitle">Tradui, jwé, viv kréyol la !</p>
 
-      <div class="apps">
-        <div class="app-icon">
-          <img src="assets/icons/kwaze-trad.png" alt="Kwazé Trad" />
-          <p>Kwazé Trad</p>
-        </div>
-        <div class="app-icon">
-          <img src="assets/icons/kwaze-scrabble.png" alt="Kwazé Scrabble" />
-          <p>Kwazé Scrabble</p>
-        </div>
-        <div class="app-icon">
-          <img src="assets/icons/kwaze-domino.png" alt="Kwazé Domino" />
-          <p>Kwazé Domino</p>
-        </div>
-      </div>
+            <div class="apps" aria-label="Applications Kwazé Kréyol">
+                <div class="app-icon bounce-on-hover">
+                    <img src="assets/icons/kwaze-trad.webp" alt="Icône Kwazé Trad" width="64" height="64" />
+                    <p>Kwazé Trad</p>
+                </div>
+                <div class="app-icon bounce-on-hover">
+                    <img src="assets/icons/kwaze-scrabble.webp" alt="Icône Kwazé Scrabble" width="64" height="64" />
+                    <p>Kwazé Scrabble</p>
+                </div>
+                <div class="app-icon bounce-on-hover">
+                    <img src="assets/icons/kwaze-domino.webp" alt="Icône Kwazé Domino" width="64" height="64" />
+                    <p>Kwazé Domino</p>
+                </div>
+            </div>
 
-      <p class="coming-soon">Disponible bientôt sur :</p>
-      <div class="store-buttons">
-        <img src="assets/icons/google-play-badge.png" alt="Google Play" />
-        <img src="assets/icons/app-store-badge.svg" alt="App Store" />
-      </div>
+            <p class="coming-soon" id="coming-soon-label">Disponible bientôt sur :</p>
+            <div class="store-buttons" aria-labelledby="coming-soon-label">
+                <a href="#" aria-label="Télécharger sur Google Play" tabindex="0">
+                    <img src="assets/icons/google-play-badge.webp" alt="Google Play" width="150" height="45" />
+                </a>
+                <a href="#" aria-label="Télécharger sur l'App Store" tabindex="0">
+                    <img src="assets/icons/app-store-badge.svg" alt="App Store" width="150" height="45" />
+                </a>
+            </div>
+        </div>
     </div>
-  </div>
 </section>
