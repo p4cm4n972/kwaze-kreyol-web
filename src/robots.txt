@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://kwazé-kréyol.fr/sitemap.xml
